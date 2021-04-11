@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGB and RGBA</title>
+  </head>
+  <body style="background-color: rgb(170, 64, 46)">
+    <h1
+      style="
+        text-align: center;
+        color: rgb(87, 0, 0);
+        border: 10px solid rgb(104, 11, 29);
+      "
+    >
+      HTML RGB and RGBA Colors
+    </h1>
+    <h2 style="text-align: center">RGB Color Values</h2>
+    <p>
+      Each parameter (red , green, and blue) defines the intensity of the color
+      with a value between 0 and 255.
+      <br />
+      This means that there are 256 x 256 x 256 = 16777216 possible colors!
+      <br />
+      For example, rgb(255, 0, 0) is displayed as red, because red is set to its
+      highest value (255), and the other two (green and blue) are set to 0.
+      <br />
+      Another example, rgb(0, 255, 0) is displayed as green, because green is
+      set to its highest value (255), and the other two (red and blue) are set
+      to 0.
+      <br />
+      To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+      <br />
+      To display white, set all color parameters to 255, like this: rgb(255,
+      255, 255).
+    </p>
+    <p>
+      Shades of gray are often defined using equal values for all three
+      parameters like : rgb(60, 60, 60), rgb(100, 100, 100), rgb(140, 140, 140)
+    </p>
+    <h2 style="text-align: center">RGBA Color Values</h2>
+    <p style="background-color: rgba(57, 37, 233, 0.349)">
+      RGBA color values are an extension of RGB color values with an Alpha
+      channel - which specifies the opacity for a color.
+      <br />
+      An RGBA color value is specified with:
+      <br />
+      rgba(red, green, blue, alpha)
+      <br />
+      The alpha parameter is a number between 0.0 (fully transparent) and 1.0
+      (not transparent at all):
+      <br />
+      Experiment by mixing the RGBA values below:
+      <br />
+      rgba(255, 99, 71, 0.5)
+    </p>
+  </body>
+</html>
