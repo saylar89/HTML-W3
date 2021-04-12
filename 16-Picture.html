@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        color: darkred;
+        text-align: center;
+      }
+      body {
+        background-color: darkgrey;
+      }
+      p {
+        color: black;
+      }
+      h2 {
+        color: darkblue;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>HTML picture Element</h1>
+    <h2>The HTML picture Element</h2>
+    <p>
+      The HTML picture element gives web developers more flexibility in
+      specifying image resources.<br /><br />
+      The picture element contains one or more source elements, each referring
+      to different images through the srcset attribute. This way the browser can
+      choose the image that best fits the current view and/or device.<br />
+      <br />
+      Each source element has a media attribute that defines when the image is
+      the most suitable.<br />
+    </p>
+    <picture>
+      <source media="(min-width:650px)" srcset="Maserati.jpg" />
+      <source media="(min-width:450px)" srcset="Ford-Mustang.jpg" />
+      <img src="workplace.jpg" />
+    </picture>
+  </body>
+</html>
