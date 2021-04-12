@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        color: darkred;
+        text-align: center;
+      }
+      body {
+        background-color: darkgrey;
+      }
+      p {
+        color: black;
+      }
+      h2 {
+        color: darkblue;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 6px;
+      }
+      th {
+        text-align: left;
+      }
+
+      table {
+        border-spacing: 5px;
+      }
+      #t01 {
+        width: 100%;
+        background-color: #f1f1c1;
+      }
+      #t01 tr:nth-child(even) {
+        background-color: rgb(145, 16, 16);
+      }
+      #t01 tr:nth-child(odd) {
+        background-color: rgb(0, 26, 141);
+      }
+      #t01 th {
+        color: white;
+        background-color: black;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <h1>HTML Tables</h1>
+    <h2>Define an HTML Table</h2>
+    <p>
+      The table tag defines an HTML table.<br />
+      <br />
+      Each table row is defined with a tr tag. Each table header is defined with
+      a th tag. Each table data/cell is defined with a td tag.<br />
+      <br />
+      By default, the text in th elements are bold and centered.<br />
+      <br />
+      By default, the text in td elements are regular and left-aligned.<br />
+      <br />
+      <b style="color: red"
+        >Note: The td elements are the data containers of the table. They can
+        contain all sorts of HTML elements; text, images, lists, other tables,
+        etc.</b
+      >
+    </p>
+    <br />
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Amir</td>
+        <td>Zand</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Mohsen</td>
+        <td>Amiri</td>
+        <td>34</td>
+      </tr>
+    </table>
+    <h2>HTML Table - Add a Border</h2>
+    <p>To add a border to a table, use the CSS border property</p>
+    <h2>Add Cell Padding</h2>
+    <p>
+      Cell padding specifies the space between the cell content and its
+      borders.<br />
+      <br />
+      If you do not specify a padding, the table cells will be displayed without
+      padding.<br />
+      <br />
+      To set the padding, use the CSS padding property<br />
+    </p>
+    <h2>Add Border Spacing</h2>
+    <p>
+      Border spacing specifies the space between the cells.<br />
+      <br />
+      To set the border spacing for a table, use the CSS border-spacing
+      property<br />
+    </p>
+    <h2>Cell that Spans Many Columns</h2>
+    <p>To make a cell span more than one column, use the colspan attribute</p>
+    <br /><br />
+    <table>
+      <tr>
+        <th style="text-align: center">Name</th>
+        <th colspan="2" style="text-align: center">Phone Number</th>
+      </tr>
+      <tr>
+        <td>Nima zandi</td>
+        <td>09121112222</td>
+        <td>02144455566</td>
+      </tr>
+    </table>
+    <h2>Cell that Spans Many Rows</h2>
+    <p>To make a cell span more than one row, use the rowspan attribute</p>
+    <br /><br />
+    <table style="width: 100%">
+      <tr>
+        <th>Name</th>
+        <td>shahab shahabi</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Telephone</th>
+        <td>33333333</td>
+      </tr>
+      <tr>
+        <td>44444444</td>
+      </tr>
+    </table>
+    <h2>Add a Caption</h2>
+    <p>To add a caption to a table, use the caption tag</p>
+    <table style="width: 100%">
+      <caption>
+        Monthly savings
+      </caption>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$50</td>
+      </tr>
+    </table>
+    <h2>A Special Style for One Table</h2>
+    <p>
+      To define a special style for one particular table, add an id attribute to
+      the table.Then you can define a special style for this table by css.
+    </p>
+    <table id="t01">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+  </body>
+</html>
