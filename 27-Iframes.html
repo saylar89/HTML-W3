@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        color: rgb(197, 1, 1);
+        text-align: center;
+      }
+      body {
+        background-color: rgb(34, 34, 34);
+      }
+      p {
+        color: rgb(248, 248, 248);
+        border: 2px solid black;
+      }
+      h2 {
+        color: rgb(212, 212, 255);
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframes</title>
+  </head>
+  <body>
+    <h1>HTML Iframes</h1>
+    <p>An HTML iframe is used to display a web page within a web page</p>
+    <p>
+      The HTML iframe tag specifies an inline frame. An inline frame is used to
+      embed another document within the current HTML document.
+    </p>
+    <p>
+      Tip: It is a good practice to always include a title attribute for the
+      iframe. This is used by screen readers to read out what the content of the
+      iframe is.
+    </p>
+    <iframe
+      src="1-html1.html"
+      height="200"
+      width="500"
+      title="iframe example"
+      style="border: none"
+    ></iframe>
+    <h2>Iframe - Target for a Link</h2>
+    <p>
+      An iframe can be used as the target frame for a link. The target attribute
+      of the link must refer to the name attribute of the iframe
+    </p>
+    <iframe src="Maserati.jpg" name="iframe_a" title="Iframe Example"></iframe>
+
+    <p>
+      <a href="https://www.google.com" target="iframe_a">Google.com</a>
+    </p>
+  </body>
+</html>
