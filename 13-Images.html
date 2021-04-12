@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        color: darkred;
+        text-align: center;
+      }
+      body {
+        background-color: darkgrey;
+      }
+      p {
+        color: black;
+      }
+      h2 {
+        color: darkblue;
+      }
+      img {
+        width: 70%;
+        height: 70%;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+  </head>
+  <body>
+    <h1>HTML Images</h1>
+    <h2>HTML Images Syntax</h2>
+
+    <p>
+      The img tag is empty, it contains attributes only, and does not have a
+      closing tag.<br />
+      <br />
+      The img tag has two required attributes:<br />
+      <br />
+      src - Specifies the path to the image<br />
+      alt - Specifies an alternate text for the image<br />
+      You can use the style attribute to specify the width and height of an
+      image<br />
+      Alternatively, you can use the width and height attributes<br /><br />
+      The width, height, and style attributes are all valid in HTML.<br />
+      <br />
+      However, we suggest using the style attribute. It prevents styles sheets
+      from changing the size of images<br />
+    </p>
+    <img src="Maserati.jpg" alt="It is a Maserati babe" /><br /><br />
+    <h2>Images in Another Folder</h2>
+    <p>
+      If you have your images in a sub-folder, you must include the folder name
+      in the src attribute
+    </p>
+    <p>
+      &ltimg src="/images/html5.gif" alt="HTML5 Icon"
+      style="width:128px;height:128px;"&gt
+    </p>
+    <img src="image/tour.jpg" alt="Antalya toue price" />
+    <h2>Images on Another Server/Website</h2>
+    <p>
+      Some web sites point to an image on another server. To point to an image
+      on another server, you must specify an absolute (full) URL in the src
+      attribute<br /><br />
+      &ltimg src="https://www.w3schools.com/images/w3schools_green.jpg"
+      alt="W3Schools.com" /&gt
+    </p>
+
+    <img
+      src="https://www.w3schools.com/images/w3schools_green.jpg"
+      alt="W3Schools.com"
+    />
+    <h2>Animated Images</h2>
+    <p>HTML allows animated GIFs</p>
+    <h2>Image as a Link</h2>
+    <p>To use an image as a link, put the img tag inside the a tag</p>
+    <h2>Image Floating</h2>
+    <p>
+      Use the CSS float property to let the image float to the right or to the
+      left of a text
+    </p>
+    <p><img src="Maserati.jpg" style="float: left" /></p>
+    <p><img src="Ford-Mustang.jpg" style="float: right" /></p>
+  </body>
+</html>

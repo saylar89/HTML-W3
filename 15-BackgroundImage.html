@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        color: rgb(197, 1, 1);
+        text-align: center;
+      }
+      body {
+        background-color: rgb(34, 34, 34);
+        background-image: url(image/border.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      p {
+        color: rgb(248, 248, 248);
+        border: 2px solid black;
+      }
+      h2 {
+        color: rgb(212, 212, 255);
+        background-image: url("Ford-Mustang.jpg");
+        background-size: 100% 100%;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Images</title>
+  </head>
+  <body>
+    <h1>HTML Background Images</h1>
+    <h2>Background Image on a HTML element</h2>
+
+    <div
+      style="background-image: url('Maserati.jpg'); background-size: 100% 100%"
+    >
+      <p>
+        To add a background image on an HTML element, use the HTML style
+        attribute and the CSS background-image property
+      </p>
+      <p>Add a background image on a HTML element</p>
+      <p>&ltdiv style="background-image: url('img_girl.jpg');"&gt&lt/div&gt</p>
+    </div>
+    <p>
+      You can also specify the background image in the style element, in the
+      head section
+    </p>
+    <p>
+      To avoid the background image from repeating itself, set the
+      background-repeat property to no-repeat
+    </p>
+    <h2>Background cover</h2>
+    <p>
+      If you want the background image to cover the entire element, you can set
+      the background-size property to cover. Also, to make sure the entire
+      element is always covered, set the background-attachment property to
+      fixed: This way, the background image will cover the entire element, with
+      no stretching (the image will keep its original proportions)
+    </p>
+    <h2>Background Stretch</h2>
+    <p>
+      If you want the background image to stretch to fit the entire element, you
+      can set the background-size property to 100% 100%
+    </p>
+    <p>
+      Try resizing the browser window, and you will see that the image will
+      stretch, but always cover the entire element
+    </p>
+  </body>
+</html>
+l
