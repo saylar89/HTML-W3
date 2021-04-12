@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        color: crimson;
+        text-align: center;
+      }
+      body {
+        background-color: darkseagreen;
+      }
+      p {
+        color: black;
+        border: 5px;
+        padding: 5px0;
+      }
+      h2 {
+        color: blue;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Links</title>
+  </head>
+  <body>
+    <h1>HTML Links - Hyperlinks</h1>
+    <h2>HTML Links - Syntax</h2>
+    <p>
+      The HTML a tag defines a hyperlink. It has the following syntax:<br />
+      &lta href="url"&gtlink text&lt/a&gt
+    </p>
+    <a href="http://google.com" target="_blank">Google Link</a>
+    <h2>Absolute URLs vs. Relative URLs</h2>
+    <p>
+      example above are using an absolute URL (a full web address) in the href
+      attribute. A local link (a link to a page within the same website) is
+      specified with a relative URL (without the https://www part)
+    </p>
+    <a href="/8-CSS.html" target="_blank">Local link to css</a>
+    <h2>Use an Image as a Link</h2>
+    <p>To use an image as a link, just put the img tag inside the a tag</p>
+    <a href="/1-html1.html"
+      ><img src="Maserati.jpg" width="200" height="150" alt="Ford Mustang" />
+    </a>
+    <h2>Link to an email address</h2>
+    <p>
+      Use mailto: inside the href attribute to create a link that opens the
+      user's email program (to let them send a new email)
+    </p>
+    <a href="mailto:saylar.design@gmail.com">Send Email</a>
+    <h2>Button as a Link</h2>
+    <p>
+      To use an HTML button as a link, you have to add some JavaScript code.
+      JavaScript allows you to specify what happens at certain events, such as a
+      click of a button
+    </p>
+    <button onclick="document.location='/1-html1.html'">Html Tutorial</button>
+    <h2>Link Titles</h2>
+    <p>
+      The title attribute specifies extra information about an element. The
+      information is most often shown as a tooltip text when the mouse moves
+      over the element.
+      <a
+        href="https://www.w3schools.com/html/"
+        title="Go to W3Schools HTML section"
+        >Visit our HTML Tutorial</a
+      >
+    </p>
+  </body>
+</html>

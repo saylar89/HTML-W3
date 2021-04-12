@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        color: darkred;
+        text-align: center;
+      }
+      body {
+        background-color: darkgrey;
+      }
+      p {
+        color: black;
+      }
+      h2 {
+        color: darkblue;
+      }
+      a:link {
+        background-color: #001c77;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link Color</title>
+  </head>
+  <body>
+    <h1>HTML Links - Different Colors</h1>
+    <h2>HTML Link Colors</h2>
+    <p>By default, a link will appear like this (in all browsers):</p>
+    <ul>
+      <li>An unvisited link is underlined and blue</li>
+      <li>A visited link is underlined and purple</li>
+      <li>An active link is underlined and red</li>
+    </ul>
+    <p>You can change the link state colors, by using CSS</p>
+    <p>
+      Here, an unvisited link will be green with no underline. A visited link
+      will be pink with no underline. An active link will be yellow and
+      underlined. In addition, when mousing over a link (a:hover) it will become
+      red and underlined
+    </p>
+    <a href="http://google.com" target="_blank">Google Link</a><br /><br />
+    <a href="http://instagram.com" target="_blank">Instagram Link</a
+    ><br /><br />
+    <a href="http://facebook.com" target="_blank">Facebook Link</a><br /><br />
+    <a href="http://ebay.com" target="_blank">Ebay Link</a><br /><br />
+    <h2>Link Buttons</h2>
+    <p>A link can also be styled as a button, by using CSS</p>
+    <p>
+      &ltstyle><br />
+      a:link, a:visited {<br />
+      background-color: #f44336;<br />
+      color: white;<br />
+      padding: 15px 25px;<br />
+      text-align: center;<br />
+      text-decoration: none;<br />
+      display: inline-block;<br />
+      }<br />
+      <br />
+      a:hover, a:active {<br />
+      background-color: red;<br />
+      }<br />
+      &lt/style&gt<br />
+    </p>
+  </body>
+</html>
