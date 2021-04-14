@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        color: crimson;
+        text-align: center;
+      }
+      body {
+        background-color: rgb(189, 189, 189);
+      }
+      p {
+        color: black;
+        border: 5px;
+        padding: 5px0;
+      }
+      h2 {
+        color: rgb(0, 0, 150);
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>HTML Input form* Attributes</h1>
+    <h2>form</h2>
+    <p>
+      The input form attribute specifies the form the input element belongs to.
+      The value of this attribute must be equal to the id attribute of the form
+      element it belongs to
+    </p>
+    <form action="/action_page.php" id="form1">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      The "Last name" field below is outside the form element, but still part of
+      the form.
+    </p>
+
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" form="form1" />
+    <h2>formaction</h2>
+    <p>
+      The input formaction attribute specifies the URL of the file that will
+      process the input when the form is submitted.<br />
+      <br />
+      Note: This attribute overrides the action attribute of the form
+      element.<br />
+      <br />
+      The formaction attribute works with the following input types: submit and
+      image.<br />
+    </p>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input
+        type="submit"
+        formaction="/action_page2.php"
+        value="Submit as Admin"
+      />
+    </form>
+    <h2>formenctype</h2>
+    <p>
+      The input formenctype attribute specifies how the form-data should be
+      encoded when submitted (only for forms with method="post").<br />
+      <br />
+      Note: This attribute overrides the enctype attribute of the form
+      element.<br />
+      <br />
+      The formenctype attribute works with the following input types: submit and
+      image. <br />
+    </p>
+    <p>
+      A form with two submit buttons. The first sends the form-data with default
+      encoding, the second sends the form-data encoded as "multipart/form-data"
+    </p>
+    <form action="/action_page_binary.asp" method="post">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input
+        type="submit"
+        formenctype="multipart/form-data"
+        value="Submit as Multipart/form-data"
+      />
+    </form>
+    <h2>formmethod</h2>
+    <p>
+      The input formmethod attribute defines the HTTP method for sending
+      form-data to the action URL.<br />
+      <br />
+      Note: This attribute overrides the method attribute of the form
+      element.<br />
+      <br />
+      The formmethod attribute works with the following input types: submit and
+      image.<br />
+      <br />
+      The form-data can be sent as URL variables (method="get") or as an HTTP
+      post transaction (method="post").<br />
+    </p>
+    <form action="/action_page.php" method="get">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit using GET" />
+      <input type="submit" formmethod="post" value="Submit using POST" />
+    </form>
+  </body>
+</html>
