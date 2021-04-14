@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        color: crimson;
+        text-align: center;
+      }
+      body {
+        background-color: rgb(189, 189, 189);
+      }
+      p {
+        color: black;
+        border: 5px;
+        padding: 5px0;
+      }
+      h2 {
+        color: rgb(0, 0, 150);
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms in HTML</h1>
+    <h2>Text</h2>
+    <form>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br />
+    </form>
+    <h2>Radio</h2>
+    <form>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br />
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label>
+    </form>
+    <h2>Checkbox</h2>
+    <form>
+      <input type="checkbox" id="vehicle1" name="vehicle1" />
+      <label for="vehicle1">I have a car</label>
+      <input type="checkbox" id="vehicle2" name="vehicle2" />
+      <label for="vehicle2">I have a bike</label>
+      <input type="checkbox" id="vehicle3" name="vehicle3" />
+      <label for="vehicle3">I have a boat</label>
+    </form>
+    <form
+      action="/action_page.php"
+      target="_blank"
+      method="get"
+      autocomplete="on"
+    >
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <h2>The HTML form Elements</h2>
+    <p>
+      The HTML form element can contain one or more of the following form
+      elements:
+    </p>
+    <ul>
+      <li>input</li>
+      <li>label</li>
+      <li>select</li>
+      <li>textarea</li>
+      <li>button</li>
+      <li>fieldset</li>
+      <li>legend</li>
+      <li>datalist</li>
+      <li>output</li>
+      <li>option</li>
+      <li>optgroup</li>
+    </ul>
+    <h3>The select Element</h3>
+    <form>
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars" size="2">
+        <option value="volvo">Volvo</option>
+        <option value="ford">Ford</option>
+        <option value="fiat" selected>Fiat</option>
+        <option value="benz">Benz</option>
+        <option value="audi">Audi</option>
+        <option value="BMW">BMW</option>
+      </select>
+    </form>
+    <br /><br /><br />
+    <form>
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="ford">Ford</option>
+        <option value="fiat" selected>Fiat</option>
+        <option value="benz">Benz</option>
+        <option value="audi">Audi</option>
+        <option value="BMW">BMW</option>
+      </select>
+    </form>
+    <h2>The textarea Element</h2>
+    <form action="/action_page.php">
+      <textarea name="message" rows="10" cols="30">
+  Write your opinion</textarea
+      >
+      <br /><br />
+      <input type="submit" />
+    </form>
+    <h2>The button Element</h2>
+    <button type="button" onclick="alert('Hello!')">Click Me</button>
+    <br />
+    <h2>The fieldset and legend Elements</h2>
+    <p>
+      The fieldset element is used to group related data in a form.<br />
+      <br />
+      The legend element defines a caption for the fieldset element.<br />
+    </p>
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Personal Info:</legend>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="John" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <h2>The datalist Element</h2>
+    <p>
+      The datalist element specifies a list of pre-defined options for an input
+      element. <br />
+      <br />
+      Users will see a drop-down list of the pre-defined options as they input
+      data. <br />
+      <br />
+      The list attribute of the input element, must refer to the id attribute of
+      the datalist element.
+    </p>
+    <form action="/action_page.php">
+      <input list="browsers" />
+      <datalist id="browsers">
+        <option value="Internet Explorer"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+    </form>
+    <h2>The output Element</h2>
+    <p>
+      The output element represents the result of a calculation (like one
+      performed by a script).
+    </p>
+    <form
+      action="/action_page.php"
+      oninput="x.value=parseInt(a.value)+parseInt(b.value)"
+    >
+      0
+      <input type="range" id="a" name="a" value="50" />
+      100 +
+      <input type="number" id="b" name="b" value="50" />
+      =
+      <output name="x" for="a b"></output>
+      <br /><br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
