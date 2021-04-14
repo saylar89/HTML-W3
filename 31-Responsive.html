@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<style>
+  h1 {
+    color: crimson;
+    text-align: center;
+  }
+  body {
+    background-color: darkseagreen;
+  }
+  p {
+    color: black;
+    border: 5px;
+    padding: 5px0;
+  }
+  h2 {
+    color: blue;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  .left {
+    background-color: #2196f3;
+    padding: 20px;
+    float: left;
+    width: 20%; /* The width is 20%, by default */
+  }
+
+  .main {
+    background-color: #f1f1f1;
+    padding: 20px;
+    float: left;
+    width: 60%; /* The width is 60%, by default */
+  }
+
+  .right {
+    background-color: #4caf50;
+    padding: 20px;
+    float: left;
+    width: 20%; /* The width is 20%, by default */
+  }
+
+  /* Use a media query to add a break point at 800px: */
+  @media screen and (max-width: 800px) {
+    .left,
+    .main,
+    .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+</style>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Responsive Images</h2>
+    <h3>Using the max-width Property</h3>
+    <img src="image/img_girl.jpg" style="max-width: 100%; height: auto" />
+    <h3>Using the width Property</h3>
+    <img src="image/img_girl.jpg" style="width: 100%" />
+    <h2>Show Different Images Depending on Browser Width</h2>
+    <picture>
+      <source srcset="image/img_smallflower.jpg" media="(max-width: 600px)" />
+      <source srcset="image/img_flowers.jpg" media="(max-width: 1500px)" />
+      <source srcset="image/flowers.jpg" />
+      <img src="image/img_smallflower.jpg" alt="Flowers" />
+    </picture>
+    <h2>Responsive Text Size</h2>
+    <h1 style="font-size: 10vw">Hello World</h1>
+    <h2>Media Queries</h2>
+    <p>Resize the browser window.</p>
+
+    <p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+
+    <div class="left">
+      <p>Left Menu</p>
+    </div>
+
+    <div class="main">
+      <p>Main Content</p>
+    </div>
+
+    <div class="right">
+      <p>Right Content</p>
+    </div>
+  </body>
+</html>
