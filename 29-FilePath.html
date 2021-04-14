@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        color: darkred;
+        text-align: center;
+      }
+      body {
+        background-color: darkgrey;
+      }
+      p {
+        color: black;
+      }
+      h2 {
+        color: darkblue;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 6px;
+      }
+      th {
+        text-align: left;
+      }
+
+      table {
+        border-spacing: 5px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Path</title>
+  </head>
+  <body>
+    <h1>HTML File Paths</h1>
+    <p>
+      A file path describes the location of a file in a web site's folder
+      structure.
+    </p>
+    <table>
+      <tr>
+        <th>Path</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>$ltimg src="picture.jpg"&gt</td>
+        <td>
+          The "picture.jpg" file is located in the same folder as the current
+          page
+        </td>
+      </tr>
+      <tr>
+        <td>$img src="images/picture.jpg"&gt</td>
+        <td>
+          The "picture.jpg" file is located in the images folder in the current
+          folder
+        </td>
+      </tr>
+      <tr>
+        <td>$ltimg src="/images/picture.jpg"&gt</td>
+        <td>
+          The "picture.jpg" file is located in the images folder at the root of
+          the current web
+        </td>
+      </tr>
+      <tr>
+        <td>$ltimg src="../picture.jpg"&gt</td>
+        <td>
+          The "picture.jpg" file is located in the folder one level up from the
+          current folder
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
